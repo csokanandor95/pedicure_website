@@ -29,3 +29,41 @@ nav {
     nav a:hover {
       color: #33d64e;
     }
+
+section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .intro img {
+      max-width: 250px;
+      border-radius: 50%;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
