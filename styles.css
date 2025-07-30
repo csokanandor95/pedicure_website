@@ -86,16 +86,23 @@ section {
       margin-bottom: 1.5rem;
     }
 
-    .gallery {
+     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
     }
 
     .gallery img {
       width: 100%;
       border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
 
 footer {
   text-align: center;
