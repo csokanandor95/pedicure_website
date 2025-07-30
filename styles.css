@@ -19,27 +19,45 @@ header h1 {
 }
 
 nav {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
 
-    nav a:hover {
-      color: #50c878 ;
-    }
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #7fd6a5;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #333;
+}
 
 section {
       max-width: 900px;
