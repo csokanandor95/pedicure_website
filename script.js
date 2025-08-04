@@ -33,16 +33,27 @@ document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
 });
 
-// Navbar változása scroll közben
+// Navbar és scroll-to-top gomb változása scroll közben
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
   
   if (window.scrollY > 100) {
     navbar.classList.add('scrolled');
+    scrollTopBtn.classList.add('visible');
   } else {
     navbar.classList.remove('scrolled');
+    scrollTopBtn.classList.remove('visible');
   }
 });
+
+// Scroll to top funkció
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
 // Galéria modal funkciók
 function showImageModal(img) {
