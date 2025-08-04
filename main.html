@@ -49,10 +49,10 @@
   <section id="galeria">
   <h2>Galéria</h2>
   <div class="gallery">
-    <img src="galeria1.jpg" alt="Pedikűr előtte">
-    <img src="galeria2.jpg" alt="Pedikűr utána">
-    <img src="galeria3.jpg" alt="Francia lakkozás">
-    <img src="galeria4.jpg" alt="Masszázs pillanat">
+    <img src="galeria1.jpg" alt="Pedikűr előtte" onclick="showImageModal(this)">
+    <img src="galeria2.jpg" alt="Pedikűr utána" onclick="showImageModal(this)">
+    <img src="galeria3.jpg" alt="Francia lakkozás" onclick="showImageModal(this)">
+    <img src="galeria4.jpg" alt="Masszázs pillanat" onclick="showImageModal(this)">
   </div>
   </section>
 
@@ -66,6 +66,13 @@
   <footer>
     &copy; 2025 Szilvi pedikűr. Minden jog fenntartva.
   </footer>
+
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImage">
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

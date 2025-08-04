@@ -43,3 +43,43 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+// Galéria modal funkciók
+function showImageModal(img) {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  
+  modal.style.display = 'block';
+  modalImg.src = img.src;
+  modalImg.alt = img.alt;
+  
+  // Fade in animáció
+  modal.style.opacity = '0';
+  setTimeout(() => {
+    modal.style.transition = 'opacity 0.3s ease';
+    modal.style.opacity = '1';
+  }, 10);
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.style.opacity = '0';
+  setTimeout(() => {
+    modal.style.display = 'none';
+  }, 300);
+}
+
+// ESC gombra modal bezárása
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+
+// Klikk a modal háttérre bezárja
+document.addEventListener('click', (e) => {
+  const modal = document.getElementById('imageModal');
+  if (e.target === modal) {
+    closeModal();
+  }
+});
