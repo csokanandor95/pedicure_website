@@ -236,9 +236,9 @@ h2::after {
 
 .intro {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
   background: rgba(255, 255, 255, 0.7);
   padding: 2rem;
   border-radius: 15px;
@@ -254,8 +254,8 @@ h2::after {
 }
 
 .intro-text {
-  flex: 1;
-  min-width: 300px;
+  width: 100%;
+  text-align: left;
 }
 
 .intro-image {
@@ -291,17 +291,7 @@ h2::after {
 
 @media (max-width: 768px) {
   .intro {
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-  }
-  
-  .intro-text {
-    min-width: auto;
-  }
-  
-  .intro-image {
-    order: -1;
   }
 }
 
@@ -379,7 +369,6 @@ h2::after {
   border-color: rgba(127, 214, 165, 0.3);
 }
 
-/* Modal stílusok */
 .modal {
   display: none;
   position: fixed;
