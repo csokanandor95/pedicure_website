@@ -6,9 +6,12 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     const targetSection = document.querySelector(targetId);
     
     if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navbarHeight = document.getElementById('navbar').offsetHeight;
+      const targetPosition = targetSection.offsetTop - navbarHeight - 20; // 20px extra térköz
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
     }
   });
