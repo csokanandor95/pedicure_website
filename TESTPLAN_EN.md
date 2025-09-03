@@ -7,7 +7,7 @@ This document is created to manually test the main functionalities of the websit
 | TC01 | Navigation menu | Click on the 'Bemutatkozás' menu item | Page smoothly scrolls to the 'Bemutatkozás' section | pass |
 | TC02 | Navigation menu | Click on the 'Kapcsolat' menu item | Page smoothly scrolls to the 'Kapcsolat' section | pass |
 | TC03 | Smooth scrolling | Click on a menu item | Scrolling is animated, not a sudden jump | pass |
-| TC04 | Contact links | Click on the phone link on mobile | Call initiation is offered |
+| TC04 | Contact links | Click on the phone link on mobile | Call initiation is offered | pass |
 | TC05 | Contact links | Click on the Facebook link | Link opens in a new tab | pass |
 | TC06 | Gallery | Click on a gallery image | Modal opens, image is displayed enlarged | pass |
 | TC07 | Gallery | Press ESC while modal is open | Modal closes | pass |
