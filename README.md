@@ -1,4 +1,41 @@
-# pedicure_website
-(EN) A simple static website for a pedicure business. The site contains a navigation menu with 4 elements: introduction, services, gallery and contact. The site is designed to be responsive and work well on mobile devices too. Navigation menu is fixed to the top of the page so that the links to all menu items are always available. Navigation menu items and picture have animations when hovering over. 
+# Fitt Lábak – Pedicure Website
 
-(DE) Eine einfache statische Website für ein Pediküre-Geschäft. Die Seite enthält ein Navigationsmenü mit vier Elementen: Einführung, Leistungen, Galerie und Kontakt. Sie ist responsiv gestaltet und funktioniert auch auf Mobilgeräten einwandfrei. Das Navigationsmenü ist am oberen Seitenrand fixiert, sodass die Links zu allen Menüpunkten jederzeit verfügbar sind. Beim Überfahren mit der Maus werden die Menüpunkte und Bilder animiert.
+(EN) A simple static website for a pedicure business in Baja, Hungary.  
+
+🌐 Live demo: [fittlábak.hu](https://fittlábak.hu)
+
+---
+
+## ✨ Features
+- Responsive design (mobile, tablet, desktop)
+- Smooth scrolling navigation
+- Image gallery with modal view
+- Sticky navigation bar
+- Hover animations on menu items and pictures
+- Scroll-to-top button
+
+---
+
+## 📋 Testing
+Test cases to check basic functions: [TESTPLAN_EN.md](TESTPLAN_EN.md)
+
+---
+
+## 🛠️ Built with
+- HTML5
+- CSS3
+- Google Fonts
+- JavaScript
+- Deployed via GitHub Pages with custom domain
+
+---
+
+## 📸 Preview  
+![Website preview](gallery/screenshot.png)
+
+---
+
+## 👤 Author
+Developed by **Nándor Csóka**
+Website for: **Fitt Lábak Szilvitől** (pedicure & manicure services, Baja, Hungary)   
+
