@@ -33,45 +33,33 @@
   </script>
 
 
-  <title>Pedikűr Baja – Fitt Lábak Szilvitől | Manikűr és Lábápolás</title>
+  <title>Pedikűr Baja – Fitt Lábak Szilvitól | Manikűr és Lábápolás</title>
   <link rel="stylesheet" href="styles.css"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" >
   <link rel="icon" type="image/png" href="gallery/logo.jpg">
+  
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="gallery/logo.jpg" alt="Logo" class="header-logo">
-      <h1>Fitt Lábak Szilvitől</h1>
-    </div>
-  </header>
   <nav id="navbar">
-    <a href="#bemutatkozas">Bemutatkozás</a>
-    <a href="#szolgaltatasok">Szolgáltatások</a>
-    <a href="#galeria">Galéria</a>
-    <a href="#kapcsolat">Kapcsolat</a>
+    <div class="nav-container">
+      <img src="gallery/logo.jpg" alt="Logo" class="nav-logo">
+      <div class="nav-links">
+        <a href="#szolgaltatasok">Szolgáltatások</a>
+        <a href="#galeria">Galéria</a>
+        <a href="#rolam">Rólam</a>
+        <a href="#kapcsolat">Kapcsolat</a>
+      </div>
+    </div>
   </nav>
 
-  <section id="bemutatkozas">
-    <h2>Bemutatkozás</h2>
-    <div class="intro">
-      <div class="intro-text">
-        <p>2017-ben végeztem pedikűrösként, és azóta is örömmel és elhivatottsággal végzem a munkám. Számomra a pedikűr nem pusztán szépségápolás, hanem a gondoskodás és a törődés egyik formája. Úgy gondolom, hogy a lábaink megérdemlik ugyanazt a figyelmet és odafigyelést, mint testünk bármely más része, hiszen az egészségünk és jó közérzetünk alapját jelentik.</p>
-        
-        <p>A szakmámban fontosnak tartom a folyamatos fejlődést: rendszeresen bővítem tudásomat, követem az újdonságokat, és nagy hangsúlyt fektetek arra, hogy modern, megbízható gépekkel és eszközökkel dolgozzak. A precizitás, a higiénia és a minőségi alapanyagok használata számomra elengedhetetlen.</p>
-        
-        <p>Minden vendégem egyedi, ezért mindig személyre szabottan közelítem meg a kezeléseket. Legyen szó esztétikai pedikűrről, problémás lábak ápolásáról vagy egyszerűen csak kényeztetésről, célom, hogy mindenki elégedetten, felfrissülve és könnyed léptekkel távozzon.</p>
-        
-        <p>A pedikűr számomra nem csak szakma, hanem hivatás és szenvedély – egy olyan lehetőség, ahol a szépség és az egészség kéz a kézben jár.</p>
-      </div>
-      <div class="intro-image">
-        <img src="gallery/profilkep.jpg" alt="Szilvi portréja">
-        <p class="image-caption">Szép és egészséges lábakért!</p>
-      </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Fitt Lábak Szilvitől</h1>
+      <p class="hero-subtitle">Szép és egészséges lábakért!</p>
     </div>
-  </section>
+  </header>
 
-   <section id="szolgaltatasok" class="services">
+  <section id="szolgaltatasok" class="services">
     <h2>Szolgáltatások</h2>
     <ul>
       <li>
@@ -114,19 +102,38 @@
   </section>
 
   <section id="galeria">
-  <h2>Galéria</h2>
-  <div class="gallery">
-    <img src="gallery/galeria1.jpg" alt="Manikűr Baja" onclick="showImageModal(this)">
-    <img src="gallery/galeria2.jpg" alt="Pedikűr Baja" onclick="showImageModal(this)">
-    <img src="gallery/galeria3.jpg" alt="Manikűr - esztétikai kezelés" onclick="showImageModal(this)">
-    <img src="gallery/galeria4.jpg" alt="Manikűr - esztétikai kezelés" onclick="showImageModal(this)">
-    <img src="gallery/galeria5.jpg" alt="Lakkok" onclick="showImageModal(this)">
-    <img src="gallery/galeria6.jpg" alt="Manikűrözés közben" onclick="showImageModal(this)">
-    <img src="gallery/galeria7.jpg" alt="Pedikűr" onclick="showImageModal(this)">
-    <img src="gallery/galeria8.jpg" alt="Lábápolás" onclick="showImageModal(this)">
-    <img src="gallery/galeria9.jpg" alt="Pedikűr szépségszalon" onclick="showImageModal(this)">
-    <img src="gallery/galeria10.jpg" alt="Fitt lábak üzlet" onclick="showImageModal(this)">
-  </div>
+    <h2>Galéria</h2>
+    <div class="gallery">
+      <img src="gallery/galeria1.jpg" alt="Manikűr Baja" onclick="showImageModal(this)">
+      <img src="gallery/galeria2.jpg" alt="Pedikűr Baja" onclick="showImageModal(this)">
+      <img src="gallery/galeria3.jpg" alt="Manikűr - esztétikai kezelés" onclick="showImageModal(this)">
+      <img src="gallery/galeria4.jpg" alt="Manikűr - esztétikai kezelés" onclick="showImageModal(this)">
+      <img src="gallery/galeria5.jpg" alt="Lakkok" onclick="showImageModal(this)">
+      <img src="gallery/galeria6.jpg" alt="Manikűrözés közben" onclick="showImageModal(this)">
+      <img src="gallery/galeria7.jpg" alt="Pedikűr" onclick="showImageModal(this)">
+      <img src="gallery/galeria8.jpg" alt="Lábápolás" onclick="showImageModal(this)">
+      <img src="gallery/galeria9.jpg" alt="Pedikűr szépségszalon" onclick="showImageModal(this)">
+      <img src="gallery/galeria10.jpg" alt="Fitt lábak üzlet" onclick="showImageModal(this)">
+    </div>
+  </section>
+
+  <section id="rolam">
+    <h2>Rólam</h2>
+    <div class="intro">
+      <div class="intro-text">
+        <p>2017-ben végeztem pedikűrösként, és azóta is örömmel és elhivatottsággal végzem a munkám. Számomra a pedikűr nem pusztán szépségápolás, hanem a gondoskodás és a törődés egyik formája. Úgy gondolom, hogy a lábaink megérdemlik ugyanazt a figyelmet és odafigyelést, mint testünk bármely más része, hiszen az egészségünk és jó közérzetünk alapját jelentik.</p>
+        
+        <p>A szakmámban fontosnak tartom a folyamatos fejlődést: rendszeresen bővítem tudásomat, követem az újdonságokat, és nagy hangsúlyt fektetek arra, hogy modern, megbízható gépekkel és eszközökkel dolgozzak. A precizitás, a higiénia és a minőségi alapanyagok használata számomra elengedhetetlen.</p>
+        
+        <p>Minden vendégem egyedi, ezért mindig személyre szabottan közelítem meg a kezeléseket. Legyen szó esztétikai pedikűrről, problémás lábak ápolásáról vagy egyszerűen csak kényeztetésről, célom, hogy mindenki elégedetten, felfrissülve és könnyed léptekkel távozzon.</p>
+        
+        <p>A pedikűr számomra nem csak szakma, hanem hivatás és szenvedély – egy olyan lehetőség, ahol a szépség és az egészség kéz a kézben jár.</p>
+      </div>
+      <div class="intro-image">
+        <img src="gallery/profilkep.jpg" alt="Szilvi portréja">
+        <p class="image-caption">Várlak szeretettel!</p>
+      </div>
+    </div>
   </section>
 
   <section id="kapcsolat">
@@ -150,7 +157,27 @@
 
   <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">↑</button>
 
+    <!-- Árváltozás Értesítés Modal -->
+  <div id="noticeModal" class="notice-modal">
+    <div class="notice-content">
+      <span class="notice-close">&times;</span>
+      <div class="icon">🌿</div>
+      <h2>Árváltozás Értesítés</h2>
+      <div class="decorative-line"></div>
+      <p class="greeting">Kedves Vendégeim!</p>
+      <p class="message">
+        <span class="date-highlight">December 1-től</span><br>
+        a szolgáltatásaim árai módosulnak.
+      </p>
+      <p class="thank-you">
+        Köszönöm a megértéseteket és bizalmat,<br>
+        amellyel megtiszteltek!
+      </p>
+      <p class="signature">Szilvi</p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+   
 </body>
 </html>
-

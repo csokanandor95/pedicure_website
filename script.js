@@ -97,3 +97,26 @@ document.addEventListener('click', (e) => {
     closeModal();
   }
 });
+
+// Árváltozás értesítő 
+window.addEventListener('load', () => {
+  const noticeModal = document.getElementById('noticeModal');
+  const closeBtn = document.querySelector('.notice-close');
+
+  // Megjelenítés 1 másodperc után
+  setTimeout(() => {
+    noticeModal.classList.add('active');
+  }, 1000);
+
+  // Bezárás gomb
+  closeBtn.addEventListener('click', () => {
+    noticeModal.classList.remove('active');
+  });
+
+  // Kattintás a háttérre
+  noticeModal.addEventListener('click', (e) => {
+    if (e.target === noticeModal) {
+      noticeModal.classList.remove('active');
+    }
+  });
+});
